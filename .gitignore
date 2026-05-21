@@ -1,0 +1,21 @@
+node_modules/
+dist/
+.tsbuildinfo
+*.tsbuildinfo
+.vite/
+.DS_Store
+Thumbs.db
+.env
+.env.local
+.env.*.local
+*.log
+npm-debug.log*
+coverage/
+.idea/
+.vscode/
+
+# vendor/cryptjs is deliberately committed: it's the @muulorigin/chromastash-core
+# source the vault depends on via a file: path. CI/Vercel needs it to install.
+# To track upstream changes, periodically refresh:
+#   rm -rf vendor/cryptjs && git clone --depth 1 https://github.com/yogimehla/cryptjs.git vendor/cryptjs && rm -rf vendor/cryptjs/.git
+
